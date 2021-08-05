@@ -196,7 +196,7 @@ html.no-js .no-js-hidden {
 }
 
 .spaced-section {
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .spaced-section:last-child {
@@ -235,7 +235,7 @@ body,
     padding: 6rem 0 5rem;
   }
   .spaced-section {
-    margin-top: 8rem;72rem
+    margin-top: 8rem;
   }
 }
 
@@ -865,8 +865,8 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 750px) {
   .grid__item {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2.6rem;
     width: calc(25% - 1rem * 3 / 4);
     max-width: 50%;
   }
@@ -1804,7 +1804,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-logo {
-  height: auto;
+  height: 24px;
   width: 100%;
 }
 
