@@ -150,7 +150,7 @@ html.no-js .no-js-hidden {
 }
 
 .page-width {
-  max-width: 160rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -186,7 +186,7 @@ html.no-js .no-js-hidden {
   }
 
   .page-width-desktop {
-    max-width: 160rem;
+    max-width: 120rem;
     padding: 0 5rem;
   }
 }
@@ -235,7 +235,7 @@ body,
     padding: 6rem 0 5rem;
   }
   .spaced-section {
-    margin-top: 8rem;
+    margin-top: 8rem;72rem
   }
 }
 

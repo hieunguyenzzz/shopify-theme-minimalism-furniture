@@ -203,7 +203,7 @@
         "1628163852597a6878-2"
       ],
       "settings": {
-        "type": "type_3",
+        "type": "type_2",
         "image": "shopify:\/\/shop_images\/Ellipse-622.png",
         "height": "adapt",
         "color_scheme": "background-2",
@@ -261,30 +261,38 @@
         "1628171901adcab613-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Find the closest store to your location"
           }
         },
         "1628171901adcab613-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Quisque ut aliquam nunc, at finibus ante. Sed dignissim, nulla a fermentum egestas, odio<\/p>"
           }
         },
         "1628171901adcab613-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Find now",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "6f3f5943-e8e7-47e7-bad8-9b24dd5ade17": {
+          "type": "title",
+          "settings": {
+            "title": "Ideas for inspiration"
           }
         }
       },
       "block_order": [
         "1628171901adcab613-0",
         "1628171901adcab613-1",
-        "1628171901adcab613-2"
+        "1628171901adcab613-2",
+        "6f3f5943-e8e7-47e7-bad8-9b24dd5ade17"
       ],
       "settings": {
         "type": "type_3",
+        "image": "shopify:\/\/shop_images\/mens-fashion-close-up-shirt-tucked-in-leaning.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
