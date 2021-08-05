@@ -2,26 +2,23 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
       "blocks": {
         "sub_heading": {
           "type": "sub_heading",
           "settings": {
-            "sub_heading":"New collection"
+            "sub_heading": "New collection"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
+            "heading": "Fill your home with uniqueness"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text":"Huge variety with modern glamour!"
+            "text": "Huge variety with modern glamour!"
           }
         },
         "button": {
@@ -29,7 +26,10 @@
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_label_2": ""
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
@@ -38,37 +38,16 @@
         "heading",
         "text",
         "button"
-      ]
-    },
-    "featured_products": {
-      "type": "featured-collection",
+      ],
       "settings": {
-        "title": "Featured products"
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-2",
+        "stack_images_on_mobile": true,
+        "adapt_height_first_image": false
       }
-    },
-    "image_text": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading"
-        },
-        "text": {
-          "type": "text"
-        },
-        "button": {
-          "type": "button"
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ]
     }
   },
   "order": [
-    "image_banner",
-    "featured_products",
-    "image_text"
+    "image_banner"
   ]
 }

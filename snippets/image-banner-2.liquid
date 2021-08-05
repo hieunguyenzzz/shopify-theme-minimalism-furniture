@@ -28,21 +28,21 @@
     position: relative;
     z-index: 10;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 949px) {
   .{{id}}-banner:not(.{{id}}-banner--stacked) {
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner {
     min-height: 72rem;
     flex-direction: row;
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 949px) {
   .{{id}}-banner--stacked {
     height: auto;
   }
@@ -53,7 +53,7 @@
 }
 
 .{{id}}-banner__media {
-  height: 100%;
+  /* height: 100%; */
   left: 0;
   top: 0;
   width: 100%;
@@ -69,7 +69,7 @@
   left: auto;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 949px) {
   .{{id}}-banner--stacked .{{id}}-banner__media-half {
     width: 100%;
   }
@@ -83,10 +83,10 @@
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner__media {
-    position: absolute;
-    height: 100%;
+    /* position: absolute; */
+    /* height: 100%; */
   }
 }
 
@@ -94,7 +94,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 949px) {
   .{{id}}-banner--stacked:not(.{{id}}-banner--adapt) .{{id}}-banner__media {
     height: 39rem;
   }
@@ -124,7 +124,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner__content {
     padding-bottom: 5rem;
     padding-top: 5rem;
@@ -136,15 +136,14 @@
   padding: 4rem 3.5rem;
   position: relative;
   height: fit-content;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   width: 100%;
 }
 
 .{{id}}-banner__box > * + .{{id}}-banner__buttons {
   margin: 0 auto;
   margin-top: 2.3rem;
-  transform: translateX(1rem);
 }
 
 .{{id}}-banner__box > * + .{{id}}-banner__buttons--multiple {
@@ -155,7 +154,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner__box > * + .{{id}}-banner__buttons {
     margin-top: 2rem;
   }
@@ -174,7 +173,7 @@
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner__box > * + .{{id}}-banner__text {
     margin-top: 2rem;
   }
@@ -188,7 +187,7 @@
   margin-top: 0;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 949px) {
   .{{id}}-banner__content .button {
     flex-grow: 1;
   }
@@ -198,7 +197,7 @@
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   .{{id}}-banner__box {
     padding: 4rem;
     width: 54.8rem;
@@ -231,8 +230,8 @@
 {%- endif -%}
 
 <div id="Banner-{{ id }}" class="{{id}}-banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank%} {{id}}-banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} {{id}}-banner--adapt{% endif %}">
-  <div class="{{id}}-banner__content page-width" style="align-items: {{ section.settings.desktop_text_box_position }};">
-    <div class="{{id}}-banner__box color-{{ section.settings.color_scheme }}">
+  <div class="{{id}}-banner__content page-width  color-{{ section.settings.color_scheme }}" style="align-items: {{ section.settings.desktop_text_box_position }};">
+    <div class="{{id}}-banner__box">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'sub_heading' -%}
@@ -269,7 +268,7 @@
         {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
         {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
         {%- if section.settings.image.width >= 2800 -%}{{ section.settings.image | img_url: '2800x' }} 2800w{%- endif -%}"
-        sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
+        sizes="{% if section.settings.image_2 != blank and section.settings.stack_images_on_mobile %}(min-width: 950px) 50vw, 100vw{% elsif section.settings.image_2 != blank %}50vw{% else %}100vw{% endif %}"
         src="{{ section.settings.image | img_url: '750x' }}"
         loading="lazy"
         alt="{{ section.settings.image.alt | escape }}"
@@ -292,7 +291,7 @@
         {%- if section.settings.image_2.width >= 1780 -%}{{ section.settings.image_2 | img_url: '1780x' }} 1780w,{%- endif -%}
         {%- if section.settings.image_2.width >= 2000 -%}{{ section.settings.image_2 | img_url: '2000x' }} 2000w,{%- endif -%}
         {%- if section.settings.image_2.width >= 2800 -%}{{ section.settings.image_2 | img_url: '2800x' }} 2800w{%- endif -%}"
-        sizes="{% if section.settings.image != blank and section.settings.stack_images_on_mobile %}(min-width: 750px) 50vw, 100vw{% elsif section.settings.image != blank %}50vw{% else %}100vw{% endif %}"
+        sizes="{% if section.settings.image != blank and section.settings.stack_images_on_mobile %}(min-width: 950px) 50vw, 100vw{% elsif section.settings.image != blank %}50vw{% else %}100vw{% endif %}"
         src="{{ section.settings.image_2 | img_url: '750x' }}"
         loading="lazy"
         alt="{{ section.settings.image_2.alt | escape }}"
