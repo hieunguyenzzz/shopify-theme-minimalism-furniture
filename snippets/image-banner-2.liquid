@@ -311,3 +311,51 @@
   
 </div>
 
+   
+<style>
+  .{{id}}-banner{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ; 
+  }
+
+  .{{id}}-banner.visible{
+    visibility: visible;
+    opacity: 1;
+  }
+  .{{id}}-banner__box>*{
+    visibility: hidden;
+    opacity: 0;
+    transform:translateY(50px);
+    transition: opacity 0.7s ,transform 0.7s ; 
+  }
+  .{{id}}-banner__box>*:nth-child(2){
+    transition: opacity 0.7s 0.4s,transform 0.7s 0.4s; 
+  }
+  .{{id}}-banner__box>*:nth-child(3){
+    transition: opacity 0.9s 0.6s,transform 0.9s 0.6s; 
+  }
+  .{{id}}-banner__box>*:nth-child(4){
+    transition: opacity 1.2s 0.8s,transform 1.2s 0.8s; 
+  }
+  .{{id}}-banner.visible .{{id}}-banner__box>*{
+    transform:translateY(0);
+    visibility: visible;
+    opacity: 1;
+  }
+  .{{id}}-banner  .media{
+    visibility: hidden;
+    opacity: 0;
+    transform:rotate(180deg);
+    transition: opacity 0.7s ,transform 1.5s  ; 
+    transform-origin: bottom right; 
+  }
+  .{{id}}-banner.visible .media{
+    transform:rotate(0);
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+<visible-animate data-selector=".{{id}}-banner">
+ 
+</visible-animate>
