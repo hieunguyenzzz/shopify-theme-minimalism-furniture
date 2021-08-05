@@ -29,16 +29,16 @@ menu-drawer > details[open] > summary::before {
 
 .menu-drawer {
   position: absolute;
-  transform: translateX(-100%);
+  /* transform: translateY(-100%); */
   visibility: hidden;
   z-index: 3;
   left: 0;
   top: 100%;
-  width: calc(100vw - 4rem);
+  width: 100vw;
   padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-left: 0;
-  background-color: rgb(var(--color-background));
+
   overflow-x: hidden;
 }
 
@@ -54,14 +54,25 @@ menu-drawer > details[open] > summary::before {
   transition: transform var(--duration-default) ease,
     visibility var(--duration-default) ease;
 }
+.js details[open] > .menu-drawer .menu-drawer__inner-container,
+.js details[open] > .menu-drawer__submenu .menu-drawer__inner-container {
+  background-color: rgb(var(--color-background));
+  transform: translateY(-100%);
+  transition: transform var(--duration-default) ease,
+    visibility var(--duration-default) ease;
+}
 
 .no-js details[open] > .menu-drawer,
 .js details[open].menu-opening > .menu-drawer,
 details[open].menu-opening > .menu-drawer__submenu {
-  transform: translateX(0);
+  transform: translateY(0);
   visibility: visible;
 }
-
+.no-js details[open] > .menu-drawer .menu-drawer__inner-container,
+.js details[open].menu-opening > .menu-drawer .menu-drawer__inner-container,
+details[open].menu-opening > .menu-drawer__submenu .menu-drawer__inner-container {
+  transform: translateY(0);
+}
 @media screen and (min-width: 750px) {
   .menu-drawer {
     width: 40rem;
@@ -171,7 +182,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   background-color: rgb(var(--color-background));
   border-left: 0.1rem solid rgba(var(--color-foreground), 0.2);
   z-index: 1;
-  transform: translateX(100%);
+  transform: translateY(100%);
   visibility: hidden;
 }
 
