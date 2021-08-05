@@ -169,7 +169,7 @@
     }
     .{{id}}-image-with-text__title{
       text-align: center;
-      font-size: 4em;
+      font-size: 3em;
     }
 </style>
 
@@ -179,7 +179,7 @@
             {% case block.type %}
                 {%- when 'title' -%}
                     <h2 class="{{id}}-image-with-text__title">
-                        {{ block.settings.sub_heading | escape }}
+                        {{ block.settings.title | escape }}
                     </h2>
             {%- endcase -%}
         {%- endfor -%}

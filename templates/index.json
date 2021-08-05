@@ -40,6 +40,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Resort_Q_A.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-2",
         "stack_images_on_mobile": true,
@@ -297,6 +298,21 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "1628176261ecca667f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "001-softlines",
+        "products_to_show": 8,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
     }
   },
   "order": [
@@ -306,6 +322,7 @@
     "16281605558808f656",
     "1628163852597a6878",
     "1628163858a301f6e0",
-    "1628171901adcab613"
+    "1628171901adcab613",
+    "1628176261ecca667f"
   ]
 }
