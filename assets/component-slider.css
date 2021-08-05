@@ -16,7 +16,8 @@ slider-component {
 .slider__slide {
   scroll-snap-align: start;
   flex-shrink: 0;
-}
+  display: flex ;align-items: center  ;
+justify-content: center}
 
 @media screen and (max-width: 749px) {
   .slider.slider--mobile {

@@ -234,6 +234,9 @@ body,
   .background-secondary {
     padding: 6rem 0 5rem;
   }
+  .spaced-section {
+    margin-top: 8rem;
+  }
 }
 
 .grid-auto-flow {
@@ -482,6 +485,9 @@ table:not([class]) th {
 }
 
 .center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 

@@ -49,7 +49,7 @@
     "1628160445d84660e1": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2 style=\"text-align: center; width:100%\">\n\t\t\t\n<span ><span style=\"color: #5a5a5a;\"><a style=\"color: #5a5a5a;\" href=\"#\">! Use discount code: FIRSTIME to get <span style=\"color: #ff7012;\">10% off<\/span> your first order !<\/a><\/span><\/span>\n<span>\t\t<\/span><\/h2>"
+        "custom_liquid": "<h2 style=\"text-align: center; width:100%;padding:0 2em\">\n\t\t\t\n<span ><span style=\"color: #5a5a5a;\"><a style=\"color: #5a5a5a;text-decoration: unset;\" href=\"#\">! Use discount code: FIRSTIME to get <span style=\"color: #ff7012;\">10% off<\/span> your first order !<\/a><\/span><\/span>\n<span>\t\t<\/span><\/h2>"
       }
     },
     "1628160463978f2b49": {
@@ -83,7 +83,7 @@
         "title": "",
         "image_ratio": "square",
         "color_scheme": "background-1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "image_padding": false,
         "show_view_all": false
       }
@@ -102,36 +102,41 @@
         "16281605558808f656-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Partners6-copy.png",
+            "title": "",
+            "text": ""
           }
         },
         "16281605558808f656-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Partners6-copy.png",
+            "title": "",
+            "text": ""
           }
         },
         "91c0893a-4ee1-431b-856c-950cba072c9c": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Partners6-copy.png",
+            "title": "",
+            "text": ""
           }
         },
         "d87ebd94-cd97-410a-8406-21dbce29cca2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Partners6-copy.png",
+            "title": "",
+            "text": ""
           }
         },
         "31c4ef46-b25b-4e61-937a-20ae298a28a1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "image": "shopify:\/\/shop_images\/Partners6-copy.png",
+            "title": "",
+            "text": ""
           }
         }
       },
@@ -146,12 +151,143 @@
       "settings": {
         "title": "",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
+        "show_line_separator": false,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
+      }
+    },
+    "1628163852597a6878": {
+      "type": "image-with-text",
+      "blocks": {
+        "d4c412e0-20a9-4d56-b811-525e81d26bcb": {
+          "type": "title",
+          "settings": {
+            "title": "Ideas for inspiration"
+          }
+        },
+        "f22b3dbe-d766-4fc4-bd92-319245737f28": {
+          "type": "sub_heading",
+          "settings": {
+            "sub_heading": "Our special offer"
+          }
+        },
+        "1628163852597a6878-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Featured products with amazing color variety for your home"
+          }
+        },
+        "1628163852597a6878-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "1628163852597a6878-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Purchase",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        }
+      },
+      "block_order": [
+        "d4c412e0-20a9-4d56-b811-525e81d26bcb",
+        "f22b3dbe-d766-4fc4-bd92-319245737f28",
+        "1628163852597a6878-0",
+        "1628163852597a6878-1",
+        "1628163852597a6878-2"
+      ],
+      "settings": {
+        "type": "type_3",
+        "image": "shopify:\/\/shop_images\/Ellipse-622.png",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "1628163858a301f6e0": {
+      "type": "multicolumn",
+      "blocks": {
+        "1628163858a301f6e0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clock.png",
+            "title": "24 h Shipping",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.<\/p>"
+          }
+        },
+        "1628163858a301f6e0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clock.png",
+            "title": "24 h Shipping",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.<\/p>"
+          }
+        },
+        "1628163858a301f6e0-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/clock.png",
+            "title": "24 h Shipping",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur leo felis, consectetur id elit id.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1628163858a301f6e0-0",
+        "1628163858a301f6e0-1",
+        "1628163858a301f6e0-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "show_line_separator": true,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1628171901adcab613": {
+      "type": "image-with-text",
+      "blocks": {
+        "1628171901adcab613-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1628171901adcab613-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1628171901adcab613-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1628171901adcab613-0",
+        "1628171901adcab613-1",
+        "1628171901adcab613-2"
+      ],
+      "settings": {
+        "type": "type_3",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
       }
     }
   },
@@ -159,6 +295,9 @@
     "image_banner",
     "1628160445d84660e1",
     "1628160463978f2b49",
-    "16281605558808f656"
+    "16281605558808f656",
+    "1628163852597a6878",
+    "1628163858a301f6e0",
+    "1628171901adcab613"
   ]
 }

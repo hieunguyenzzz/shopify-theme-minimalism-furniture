@@ -38,7 +38,13 @@
   .{{id}}-multicolumn-card__image-wrapper--half-width {
     width: 50%;
   }
-
+  .{{id}}-multicolumn-list__item{
+    padding: 2em;
+  }
+ 
+  .{{id}}-multicolumn-list__item h3{
+    font-weight: bold;
+  }
   .{{id}}-multicolumn-list__item.center
     .{{id}}-multicolumn-card__image-wrapper:not(.{{id}}-multicolumn-card__image-wrapper--full-width),
   .{{id}}-multicolumn-list__item:only-child {
@@ -52,7 +58,8 @@
 
   @media screen and (min-width: 750px) {
     .{{id}}-multicolumn .button {
-      margin-top: 4rem;
+      flex:1;
+      margin-top: 0;
     }
   }
 
@@ -99,7 +106,9 @@
 
   .{{id}}-multicolumn-list__item.center .media--adapt,
   .{{id}}-multicolumn-list__item .media--adapt img {
+    object-fit: contain;
     width: auto;
+    position: relative;
   }
 
   .{{id}}-multicolumn-list__item.center .media--adapt img {
@@ -108,6 +117,7 @@
   }
 
   @media screen and (max-width: 749px) {
+    
     .{{id}}-multicolumn .page-width {
       padding: 0;
     }
@@ -137,14 +147,22 @@
   }
 
   @media screen and (min-width: 750px) {
+    {%- if component.settings.show_line_separator -%}
+      .{{id}}-multicolumn-list__item:not(:first-child){
+        border-left: 1px solid #cecece;
+      }
+    {%- endif -%}
+    
     .{{id}}-multicolumn-list.slider,
     .{{id}}-multicolumn-list.grid--4-col-desktop {
       padding: 0;
+      flex-wrap: nowrap
     }
 
     .{{id}}-multicolumn-list__item,
     .grid--4-col-desktop .{{id}}-multicolumn-list__item {
-      padding-bottom: 0;
+      /* padding-bottom: 0; */
+      flex:1
     }
 
     .grid--2-col-tablet .{{id}}-multicolumn-list__item {
@@ -153,7 +171,7 @@
     }
 
     .background-none .grid--2-col-tablet .{{id}}-multicolumn-list__item {
-      margin-top: 4rem;
+      margin-top: 0;
     }
 
     .grid--2-col-tablet .{{id}}-multicolumn-list__item:nth-of-type(-n + 2) {
@@ -226,7 +244,7 @@
     }
   }
 
-</style>>
+</style>
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -262,9 +280,7 @@
                 {% endif %}
                 <div class="{{id}}-multicolumn-card__image-wrapper {{id}}-multicolumn-card__image-wrapper--{{ component.settings.image_width }}-width{% if component.settings.image_width != 'full' or spaced_image %} {{id}}-multicolumn-card-spacing{% endif %}">
                   <div class="media media--transparent media--{{ component.settings.image_ratio }}"
-                    {% if component.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}>
+                   >
                     <img
                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
                         {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
