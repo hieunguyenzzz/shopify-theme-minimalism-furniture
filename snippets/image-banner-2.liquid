@@ -133,7 +133,7 @@
 
 .{{id}}-banner__box {
   border: 0;
-  padding: 4rem 3.5rem;
+  padding: 8rem 3.5rem;
   position: relative;
   height: fit-content;
   align-items: flex-start;
@@ -171,6 +171,8 @@
 
 .{{id}}-banner__box > * + .{{id}}-banner__text {
   margin-top: 1.5rem;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 950px) {
@@ -199,12 +201,14 @@
 
 @media screen and (min-width: 950px) {
   .{{id}}-banner__box {
-    padding: 4rem;
-    width: 54.8rem;
+    padding: 8rem;
   }
 
   .{{id}}-banner__box > .{{id}}-banner__buttons:only-child .button {
     margin-top: 0;
+  }
+  .{{id}}-banner__heading {
+    font-size: 6rem;
   }
 }
 
@@ -214,7 +218,10 @@
 }
 
 .{{id}}-banner__heading {
-  margin-bottom: 0;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 </style>

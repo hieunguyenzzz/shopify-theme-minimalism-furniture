@@ -154,6 +154,11 @@ html.no-js .no-js-hidden {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+.page-width-full {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 .page-width-desktop {
   padding: 0;
@@ -1118,8 +1123,9 @@ deferred-media {
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;_banner-banner__text
   line-height: 1.2;
+  font-weight: bold;
 }
 
 .button--tertiary {
