@@ -40,7 +40,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Resort_Q_A.jpg",
+        "image": "shopify:\/\/shop_images\/comfortable-living-room-cat.jpg",
         "desktop_text_box_position": "center",
         "color_scheme": "background-2",
         "stack_images_on_mobile": true,
@@ -59,19 +59,19 @@
         "1628160463978f2b49-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tops"
+            "collection": "wood"
           }
         },
         "1628160463978f2b49-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "bottoms"
+            "collection": "wood"
           }
         },
         "1628160463978f2b49-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "all"
+            "collection": "wood"
           }
         }
       },
@@ -293,7 +293,7 @@
       ],
       "settings": {
         "type": "type_3",
-        "image": "shopify:\/\/shop_images\/mens-fashion-close-up-shirt-tucked-in-leaning.jpg",
+        "image": "shopify:\/\/shop_images\/sunlight-creeps-through-a-bright-living-room.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -303,15 +303,20 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "001-softlines",
+        "collection": "wood",
         "products_to_show": 8,
-        "show_view_all": false,
+        "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false
+      }
+    },
+    "16282841339c8c8ddb": {
+      "type": "animate-sections",
+      "settings": {
       }
     }
   },
@@ -323,6 +328,7 @@
     "1628163852597a6878",
     "1628163858a301f6e0",
     "1628171901adcab613",
-    "1628176261ecca667f"
+    "1628176261ecca667f",
+    "16282841339c8c8ddb"
   ]
 }

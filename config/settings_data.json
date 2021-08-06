@@ -24,21 +24,47 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "9fd9a296-96c5-4646-afee-0bcd8672164c": {
+            "type": "text",
+            "settings": {
+              "heading": "PAYMENT METHOD",
+              "subtext": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.<\/p>"
+            }
+          },
+          "752b6c89-8124-4fe3-bf23-c9d6c543cb48": {
+            "type": "collection",
+            "settings": {
+              "heading": "Top rated",
+              "collection": "wood",
+              "products_to_show": 5
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "",
-              "menu": ""
+              "heading": "SHOPPING GUIDE",
+              "menu": "main-menu"
+            }
+          },
+          "2ce994a8-7bed-4422-8394-32db9f21e82b": {
+            "type": "link_list",
+            "settings": {
+              "heading": "COMPANY",
+              "menu": "main-menu"
             }
           }
         },
         "block_order": [
-          "footer-0"
+          "9fd9a296-96c5-4646-afee-0bcd8672164c",
+          "752b6c89-8124-4fe3-bf23-c9d6c543cb48",
+          "footer-0",
+          "2ce994a8-7bed-4422-8394-32db9f21e82b"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "background-2",
           "newsletter_enable": true,
           "newsletter_heading": "Sign up to our emails",
+          "newsletter_sub_heading": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris<\/p>",
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
