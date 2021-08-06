@@ -193,7 +193,7 @@
                   <div class="space-y-6">
                    {%- for product in block.settings.collection.products  limit: block.settings.products_to_show -%}
                       <a href="{{ product.url | escape -}}" class="space-x-8 flex group">
-                        <div class="w-1/4">
+                        <div class="w-1/4 flex-shrink-0">
                           <img 
                             src="{{ product.featured_media | img_url: '100x100' }}"
                             alt="{{ product.featured_media.alt | escape }}"
