@@ -705,6 +705,7 @@ input.mobile-facets__checkbox {
 .mobile-facets__summary .icon-caret {
   margin-left: auto;
   display: block;
+  transition: transform 0.3s linear;
 }
 
 .mobile-facets__label--disabled {

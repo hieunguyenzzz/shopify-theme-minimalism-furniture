@@ -59,14 +59,14 @@ module.exports = plugin(function ({ addComponents }) {
       letterSpacing: '0.08em',
     },
     '.text-subtitle': {
-      fontFamily: 'Montserrat',
+      
       fontSize: '14px',
       lineHeight: '17px',
       letterSpacing: '0.06em',
       color: '#5E5E5E',
     },
     '.text-button': {
-      fontFamily: 'Montserrat',
+      
       fontSize: '14px',
       textTransform: 'uppercase',
       fontWeight: 500,
@@ -87,7 +87,7 @@ module.exports = plugin(function ({ addComponents }) {
       letterSpacing: '0.06em',
     },
     '.categories': {
-      fontFamily: 'Montserrat',
+      
       fontSize: '14px',
       lineHeight: '17px',
       letterSpacing: '0.06em',
@@ -98,7 +98,7 @@ module.exports = plugin(function ({ addComponents }) {
       letterSpacing: '0.06em',
     },
     '.notification': {
-      fontFamily: 'Montserrat',
+      
       fontStyle: 'normal',
       fontWeight: '500',
       fontSize: '12px',

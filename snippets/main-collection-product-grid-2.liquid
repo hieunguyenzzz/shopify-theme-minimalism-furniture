@@ -483,10 +483,31 @@
     </div>
   </div>
   <div class="w-1/3 min-w-[200px] max-w-[300px]  hidden md:!block sticky top-0">
+    <details open class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
+      <summary open class="mobile-facets__summary">
+        <div>
+          <span class="font-bold">Categories</span>
+          {% render 'icon-caret' %}
+        </div>
+      </summary>
+      <div class="">
+        <ul class="flex flex-col pl-[2.5rem]" role="list">
+          {%- for collection in collections -%}
+            <li class=" py-6 w-full border-b last:border-transparent flex items-baseline space-x-3">
+              <a style=" {% if handle contains  collection.handle  %} var(--color-base-accent-1) {% endif %}" href="{{collection.url}}"  class="flex-1 {% if handle contains  collection.handle  %} font-bold {% endif %}">
+                {{ collection.title | escape }}
+              </a>
+              <div class="p-2 leading-none px-3 text-lg rounded-full bg-gray-200 font-bold ">{{ collection.all_products_count }}</div>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </details>
     <collection-filters-form>
       <form id="CollectionFiltersFormMobile" >
         <div class="">
           <div class="mobile-facets__main">
+            
             {%- for filter in collection.filters -%}
               {% case filter.type %}
               {% when 'list' %}
@@ -497,6 +518,7 @@
                       <span class="count-bubble">
                         {%- if filter.active_values.size > 0 -%}{{ filter.active_values.size }}{%- endif -%}
                       </span>
+                      {% render 'icon-caret' %}
                     </div>
                   </summary>
                   <div class="">
@@ -532,6 +554,7 @@
                     <div>
                       <span class="font-bold">{{ filter.label | escape }}</span>
                       <span class="count-bubble{%- if filter.min_value.value or filter.max_value.value -%}{{ filter.active_values.size }} count-bubble--dot{% endif %}"></span>
+                      {% render 'icon-caret' %}
                     </div>
                   </summary>
                   <div class="">
