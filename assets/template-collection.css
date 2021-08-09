@@ -673,7 +673,8 @@ input.mobile-facets__checkbox {
 }
 
 .mobile-facets__label {
-  padding: 1.5rem 0 1.5rem 4.5rem;
+  line-height: 16px;
+  padding: 1.5rem 0 1.5rem 2.5rem;
   width: 100%;
   background-color: rgb(var(--color-background));
   transition: background-color 0.2s ease;
@@ -692,7 +693,7 @@ input.mobile-facets__checkbox {
 .mobile-facets__label .icon-checkmark {
   position: absolute;
   top: 1.9rem;
-  left: 4.8rem;
+  left: 2.8rem;
   visibility: hidden;
 }
 

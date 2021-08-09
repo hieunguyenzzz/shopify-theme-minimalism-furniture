@@ -434,7 +434,6 @@
         </div>
       {%- endif -%}
     </div>
-    
     <div id="CollectionProductGrid" class="mt-12">
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
@@ -581,31 +580,6 @@
                 </details>
               {% endcase %}
             {%- endfor -%}
-
-            {%- if section.settings.enable_sorting -%}
-              <div class="mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
-                <div class="mobile-facets__summary">
-                  <div class="mobile-facets__sort">
-                    <label for="SortBy-mobile">{{ 'sections.collection_template.sort_by_label' | t }}</label>
-                    <div class="select">
-                      <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
-                        {%- for option in collection.sort_options -%}
-                          <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                        {%- endfor -%}
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {%- endif -%}
-
-            <div class="mobile-facets__footer">
-              <facet-remove>
-                <a href="{{ collection.url }}" class="mobile-facets__clear button button--secondary">{{ 'sections.collection_template.clear' | t }}</a>
-              </facet-remove>
-              <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">{{ 'sections.collection_template.apply' | t }}</button>
-              <noscript><button class="button button--primary">{{ 'sections.collection_template.apply' | t }}</button></noscript>
-            </div>
           </div>
           {% if collection.current_vendor or collection.current_type %}
             <input type="hidden" name="q" value="{{ collection.current_vendor }}{{ collection.current_type }}">
@@ -617,76 +591,4 @@
 </div>
 
 
-{% schema %}
 
-{
-    "name": "t:sections.main-collection-product-grid.name",
-    "class": "spaced-section collection-grid-section",
-    "settings": [
-        {
-            "type": "range",
-            "id": "products_per_page",
-            "min": 8,
-            "max": 24,
-            "step": 4,
-            "default": 16,
-            "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
-        }, {
-            "type": "header",
-            "content": "t:sections.main-collection-product-grid.settings.header__3.content"
-        }, {
-            "type": "select",
-            "id": "image_ratio",
-            "options": [
-                {
-                    "value": "adapt",
-                    "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
-                }, {
-                    "value": "portrait",
-                    "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
-                }, {
-                    "value": "square",
-                    "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
-                }
-            ],
-            "default": "adapt",
-            "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
-        }, {
-            "type": "checkbox",
-            "id": "show_secondary_image",
-            "default": false,
-            "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
-        }, {
-            "type": "checkbox",
-            "id": "add_image_padding",
-            "default": false,
-            "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
-        }, {
-            "type": "checkbox",
-            "id": "show_image_outline",
-            "default": true,
-            "label": "t:sections.main-collection-product-grid.settings.show_image_outline.label"
-        }, {
-            "type": "checkbox",
-            "id": "show_vendor",
-            "default": false,
-            "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
-        }, {
-            "type": "header",
-            "content": "t:sections.main-collection-product-grid.settings.header__1.content"
-        }, {
-            "type": "checkbox",
-            "id": "enable_filtering",
-            "default": true,
-            "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
-            "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
-        }, {
-            "type": "checkbox",
-            "id": "enable_sorting",
-            "default": true,
-            "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
-        }
-    ]
-}
-
-{% endschema %}

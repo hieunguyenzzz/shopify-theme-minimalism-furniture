@@ -8,11 +8,13 @@
       }
     },
     "product-grid": {
-      "type": "main-collection-product-grid-2",
+      "type": "main-collection-product-grid",
       "settings": {
+        "type": "type_2",
+        "menu": "main-menu",
         "products_per_page": 20,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "image_ratio": "square",
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
