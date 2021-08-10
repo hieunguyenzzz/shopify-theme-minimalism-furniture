@@ -4,7 +4,6 @@
 @import "tailwindcss/variants";
 @import "animate.compat.css";
 
-
 :root {
   --safe-area-inset-top: env(safe-area-inset-top, 20px);
   --safe-area-inset-right: env(safe-area-inset-right, 20px);
@@ -15,3 +14,4 @@
 .fit {
   min-height: calc(100vh - calc(var(--header-height)));
 }
+@import 'attention_seekers/fade.css';
