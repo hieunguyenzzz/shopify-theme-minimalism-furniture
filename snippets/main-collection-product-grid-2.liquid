@@ -439,14 +439,12 @@
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty" id="main-collection-product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay">
-              <div class="loading-overlay__spinner">
+              <!-- <div class="loading-overlay__spinner">
                 <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                   <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                 </svg>
-              </div>
+              </div> -->
             </div>
-    
-         
             <div class="title-wrapper center">
               <h2 class="title title--primary">
                 {{ 'sections.collection_template.empty' | t }}<br>
@@ -463,9 +461,6 @@
                 </svg>
               </div>
             </div>
-    
-           
-    
             <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="!grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16">
               {%- for product in collection.products -%}
                 <li class="">
